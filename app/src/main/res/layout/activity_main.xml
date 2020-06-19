@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF"
+    android:background="?attr/backgroundColor"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -35,7 +35,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:nextFocusDown="@id/et_log_pass"/>
+                android:nextFocusDown="@id/et_log_pass"
+                android:textColor="?attr/textColor"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -49,7 +50,8 @@
                 android:id="@+id/et_log_pass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="?attr/textColor" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
