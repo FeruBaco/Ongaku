@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "36112242267",
+    "firebase_url": "https://ongaku-fdf77.firebaseio.com",
+    "project_id": "ongaku-fdf77",
+    "storage_bucket": "ongaku-fdf77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36112242267:android:ee686be688d448fe46117e",
+        "android_client_info": {
+          "package_name": "com.example.ongaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36112242267-f7jceq9e0nmp2fl1jhb1h0head8kje6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGGOOckZ7yoJ7yHkzYGDIrD4bmp9C5qoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36112242267-f7jceq9e0nmp2fl1jhb1h0head8kje6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
