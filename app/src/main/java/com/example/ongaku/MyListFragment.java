@@ -1,26 +1,34 @@
 package com.example.ongaku;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.ongaku.adapter.ListAdapter;
+import com.example.ongaku.entities.MyList;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link MyListFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class MyListFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
+    private FloatingActionButton floatingActionButton;
+    private RecyclerView recyclerView;
+    private ArrayList<MyList> myList;
+    private ListAdapter adapter;
+
+
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
@@ -28,15 +36,6 @@ public class MyListFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment MyListFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static MyListFragment newInstance(String param1, String param2) {
         MyListFragment fragment = new MyListFragment();
         Bundle args = new Bundle();
@@ -58,7 +57,27 @@ public class MyListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_list, container, false);
+        View v = inflater.inflate(R.layout.fragment_my_list, container, false);
+        floatingActionButton = v.findViewById(R.id.floating_action_button);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new  Intent(getActivity(), AddListActivity.class));
+            }
+        });
+        myList = new ArrayList<>();
+        recyclerView = v.findViewById(R.id.list_recycler);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        getList();
+        adapter = new ListAdapter(myList, getActivity(), recyclerView);
+        recyclerView.setAdapter(adapter);
+
+        return v;
+    }
+
+    private void getList(){
+
     }
 }

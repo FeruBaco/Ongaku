@@ -78,8 +78,9 @@
             android:id="@+id/btn_reg_reg"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="20dp"
             android:text="@string/reg_hint_reg" />
     </LinearLayout>
