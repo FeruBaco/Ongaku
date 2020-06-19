@@ -1,19 +1,22 @@
 <resources>
     <string name="app_name">Ongaku</string>
     <!-- Login strings -->
-    <string name="log_hint_username">Usuario</string>
+    <string name="log_hint_email">Correo</string>
     <string name="log_hint_password">Contraseña</string>
     <string name="log_btn_login">Ingresar</string>
     <string name="log_btn_signup">Registrate!</string>
     <string name="log_text_account">No tienes cuenta?</string>
     <!-- Register strings -->
     <string name="reg_hint_welcome">Registrate es gratis!!</string>
-    <string name="reg_hint_fname">Nombre</string>
-    <string name="reg_hint_lname">Apellido(s)</string>
+    <string name="reg_hint_user">Usuario</string>
     <string name="reg_hint_email">Correo</string>
     <string name="reg_hint_password">Contraseña</string>
     <string name="reg_hint_reg">Registrarme</string>
     <!-- Index strings -->
     <string name="index_tab_list">Mis listas</string>
     <string name="index_tab_account">Cuenta</string>
+    <!-- Account strings -->
+    <string name="account_btn_exit">Cerrar Sesión</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

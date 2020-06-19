@@ -10,42 +10,43 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
         android:padding="20dp"
-        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:layout_gravity="center"
             android:layout_marginBottom="80dp"
-            android:src="@drawable/ic_settings"
-            android:layout_gravity="center"/>
+            android:src="@drawable/ic_settings" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:startIconDrawable="@drawable/ic_person_black_24dp"
             android:layout_margin="4dp"
-            android:hint="@string/log_hint_username">
+            android:hint="@string/log_hint_email"
+            app:startIconDrawable="@drawable/ic_person_black_24dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/et_log_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"/>
+                android:inputType="text"
+                android:nextFocusDown="@id/et_log_pass"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:startIconDrawable="@drawable/ic_lock_black_24dp"
             android:layout_margin="4dp"
-            android:hint="@string/log_hint_password">
+            android:hint="@string/log_hint_password"
+            app:startIconDrawable="@drawable/ic_lock_black_24dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/et_log_pass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword" />
@@ -55,7 +56,7 @@
             android:id="@+id/btn_login_log"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/log_btn_login"/>
+            android:text="@string/log_btn_login" />
 
         <RelativeLayout
             android:layout_width="match_parent"
