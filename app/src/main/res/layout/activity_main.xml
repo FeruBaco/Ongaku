@@ -70,7 +70,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_toStartOf="@+id/btn_log_reg"
-                android:text="@string/log_text_account" />
+                android:text="@string/log_text_account"
+                android:textColorHint="?attr/textColor" />
 
             <Button
                 android:id="@+id/btn_log_reg"
@@ -79,7 +80,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:text="@string/log_btn_signup"
-                android:textSize="16dp" />
+                android:textSize="16dp"
+                android:textColorHint="?attr/textColor"/>
         </RelativeLayout>
     </LinearLayout>
 

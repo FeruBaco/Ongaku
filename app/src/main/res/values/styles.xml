@@ -6,6 +6,18 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">#FFFFFF</item>
+        <item name="textColor">#000000</item>
+    </style>
+
+    <!-- Dark application theme. -->
+    <style name="DarkTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">#1c1f1e</item>
+        <item name="textColor">#FFFFFF</item>
     </style>
 
 </resources>
