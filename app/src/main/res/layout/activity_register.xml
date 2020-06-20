@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
     tools:context=".RegisterActivity">
 
     <LinearLayout
@@ -12,7 +14,8 @@
         android:orientation="vertical"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <ImageView
             android:layout_width="120dp"
@@ -27,13 +30,15 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="@string/reg_hint_welcome"/>
+            android:text="@string/reg_hint_welcome"
+            android:textColor="?attr/textColor"/>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/reg_hint_user">
+            android:hint="@string/reg_hint_user"
+            android:textColorHint="?attr/textColor">
 
             <EditText
                 android:id="@+id/et_reg_user"
@@ -48,7 +53,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/reg_hint_email">
+            android:hint="@string/reg_hint_email"
+            android:textColorHint="?attr/textColor">
 
             <EditText
                 android:id="@+id/et_reg_email"
@@ -56,14 +62,16 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:nextFocusDown="@id/et_reg_password"/>
+                android:nextFocusDown="@id/et_reg_password"
+                android:textColor="?attr/textColor"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/reg_hint_password">
+            android:hint="@string/reg_hint_password"
+            android:textColorHint="?attr/textColor">
 
             <EditText
                 android:id="@+id/et_reg_password"

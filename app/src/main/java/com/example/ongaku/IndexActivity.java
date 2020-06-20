@@ -1,6 +1,7 @@
 package com.example.ongaku;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.ListFragment;
 import androidx.viewpager.widget.ViewPager;
