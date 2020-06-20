@@ -67,7 +67,7 @@ public class AccountFragment extends Fragment {
             }
         });
 
-        styleSwitch.findViewById(R.id.switchDarkMode);
+        styleSwitch = v.findViewById(R.id.switchDarkMode);
         if(AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
             styleSwitch.setChecked(true);
         }
@@ -93,7 +93,7 @@ public class AccountFragment extends Fragment {
     }
 
     public void restartApp() {
-        Intent intent = new Intent(getContext(), AccountFragment.class);
+        Intent intent = new Intent(getActivity(), IndexActivity.class);
         startActivity(intent);
     }
 
