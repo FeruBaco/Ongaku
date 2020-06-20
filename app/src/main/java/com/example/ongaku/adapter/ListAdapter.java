@@ -1,6 +1,7 @@
 package com.example.ongaku.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +50,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ListAdapter.ListViewHolder holder, final int position) {
+
         final MyList list = myList.get(position);
 
         holder.title.setText(myList.get(position).getName().toString());

@@ -6,18 +6,9 @@ public class MyList {
     private Integer id;
     private String name;
     private String creationDate;
-    private ArrayList<Song> songs;
-
-    public ArrayList<Song> getSongs() {
-        return songs;
-    }
-
-    public void setSongs(ArrayList<Song> songs) {
-        this.songs = songs;
-    }
 
     public Integer getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(Integer id) {
@@ -25,15 +16,15 @@ public class MyList {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
-        name = name;
+        this.name = name;
     }
 
     public String getCreationDate() {
-        return creationDate;
+        return this.creationDate;
     }
 
     public void setCreationDate(String creationDate) {

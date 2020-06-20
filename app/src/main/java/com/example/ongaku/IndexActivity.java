@@ -7,6 +7,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
+import com.example.ongaku.utilities.SQLiteHelper;
 import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.tabs.TabLayout;
 
@@ -15,9 +16,9 @@ public class IndexActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private ViewPager viewPager;
     private TabLayout tabLayout;
-
     private MyListFragment myListFragment;
     private AccountFragment accountFragment;
+    SQLiteHelper conn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class IndexActivity extends AppCompatActivity {
 
         viewPager = findViewById(R.id.view_pager);
         tabLayout = findViewById(R.id.tab_layout);
-
+        conn = new SQLiteHelper(getApplicationContext());
         myListFragment = new MyListFragment();
         accountFragment = new AccountFragment();
 
