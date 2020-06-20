@@ -35,8 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:nextFocusDown="@id/et_log_pass"
-                android:textColor="?attr/textColor"/>
+                android:nextFocusDown="@id/et_log_pass"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -50,8 +49,7 @@
                 android:id="@+id/et_log_pass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:textColor="?attr/textColor" />
+                android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -73,7 +71,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toStartOf="@+id/btn_log_reg"
                 android:text="@string/log_text_account"
-                android:textColorHint="?attr/textColor" />
+                android:textColor="?attr/textColor" />
 
             <Button
                 android:id="@+id/btn_log_reg"
@@ -83,7 +81,7 @@
                 android:layout_alignParentEnd="true"
                 android:text="@string/log_btn_signup"
                 android:textSize="16dp"
-                android:textColorHint="?attr/textColor"/>
+                android:textColor="?attr/textColor"/>
         </RelativeLayout>
     </LinearLayout>
 
