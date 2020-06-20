@@ -17,7 +17,7 @@
     <string name="index_tab_account">Cuenta</string>
     <!-- Account strings -->
     <string name="account_btn_exit">Cerrar Sesión</string>
-    <!-- AddList strings -->
+    <!-- MyListDialog strings -->
     <string name="addlist_text_newlist">Nueva Lista</string>
     <string name="addlist_text_listname">Nombre</string>
     <!-- TODO: Remove or change this placeholder text -->

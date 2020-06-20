@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 
 import com.example.ongaku.adapter.ListAdapter;
 import com.example.ongaku.entities.MyList;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.android.material.dialog.MaterialDialogs;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -24,7 +26,7 @@ public class MyListFragment extends Fragment {
     private RecyclerView recyclerView;
     private ArrayList<MyList> myList;
     private ListAdapter adapter;
-
+    private MaterialAlertDialogBuilder builder;
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -62,7 +64,7 @@ public class MyListFragment extends Fragment {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new  Intent(getActivity(), AddListActivity.class));
+                addList();
             }
         });
         myList = new ArrayList<>();
@@ -75,6 +77,14 @@ public class MyListFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         return v;
+    }
+
+    private void addList(){
+        View view = View.inflate(R.)
+        builder = new MaterialAlertDialogBuilder(getActivity())
+                .setTitle(getResources().getString(R.string.addlist_text_newlist))
+                .
+    builder.show();
     }
 
     private void getList(){
